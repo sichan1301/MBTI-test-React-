@@ -28,8 +28,8 @@ import {useState} from "react";
       <div className="App">
         {
           number > 11
-          ? <Result type={type} />
-          : <Question onAddType={onAddType} setNumber={setNumber} number={number} />
+          ?<Result type={type} />
+          :<Question onAddType={onAddType} setNumber={setNumber} number={number} />
         }
       </div>
   );
