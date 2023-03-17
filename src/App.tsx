@@ -25,13 +25,13 @@ import {useState} from "react";
     }
 
     return (
-    <div className="App">
-      {
-        number > 11
-        ? <Result type={type} />
-        : <Question onAddType={onAddType} setNumber={setNumber} number={number} />
-      }
-    </div>
+      <div className="App">
+        {
+          number > 11
+          ? <Result type={type} />
+          : <Question onAddType={onAddType} setNumber={setNumber} number={number} />
+        }
+      </div>
   );
 }
 
